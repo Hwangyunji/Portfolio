@@ -1,0 +1,93 @@
+* {
+  margin: 0; padding: 0;
+}
+ul { 
+  list-style-type: none;
+}
+h1 { font-size: 40px;}
+h2 { font-size: 35px;}
+h3 { font-size: 30px;}
+h4 { font-size: 25px;}
+p { font-size: 20px;}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.section {
+  text-align:center;
+  font-size: 3em;
+}
+.section > h1 {
+  position: absolute;
+  left: 20px; top: 40px;
+}
+.section ul li{
+  outline: 1px solid red;
+}
+
+#menu {
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid red; */
+  width: 100%;
+  background: #999;
+}
+#menu li{ 
+  margin: 29px 50px;
+}
+
+.section {
+  height: calc(100vh - 98px);
+  /* ??? */
+}
+
+#section1 h1 {
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 150px;
+  text-align: left;
+  margin-left: 200px;
+}
+
+/* slider arrow */
+.fp-controlArrow.fp-prev{
+  left: 50px;
+}
+
+.fp-controlArrow.fp-next{
+  right: 50px;
+}
+
+
+#section3 { overflow: hidden;}
+#rocket{
+  width: 800px;
+  position: absolute;
+  left: 50%; top: 90%;
+  transform: translateX(-50%);
+}
+
+#rocket.play {
+  animation-name: rocket;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rocket{
+  0% { top: 90%;}
+  100% { top: -120%;}
+}
+
+
+#section4 .contact {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 50px;
+  padding: 120px 0;
+}
