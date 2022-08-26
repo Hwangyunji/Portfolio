@@ -19,9 +19,14 @@ a {
   text-align:center;
   font-size: 3em;
 }
-.section > h1 {
+.section  h1 {
   position: absolute;
-  left: 20px; top: 40px;
+  left: 0px; 
+  top: 230px;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.5);
+  /* transform: rotate(-90deg); */
+  outline: 1px solid red;
 }
 .section ul li{
   outline: 1px solid red;
@@ -34,7 +39,7 @@ a {
   justify-content: center;
   /* outline: 1px solid red; */
   width: 100%;
-  background: #999;
+  background: gold;
 }
 #menu li{ 
   margin: 29px 50px;
@@ -65,7 +70,7 @@ a {
 
 #section3 { overflow: hidden;}
 #rocket{
-  width: 800px;
+  /* width: 800px; */
   position: absolute;
   left: 50%; top: 90%;
   transform: translateX(-50%);
@@ -83,11 +88,22 @@ a {
   100% { top: -120%;}
 }
 
+#section3 img {
+  height: 150px;
+}
+#section3 img:last-child {
+  height: 60px;
+}
 
-#section4 .contact {
+
+.footer-wrap .footer {
+  height: 300px;
+}
+.footer .contact {
   display: flex;
   justify-content: center;
   text-align: left;
   gap: 50px;
-  padding: 120px 0;
+  padding: 20px 0;
 }
+

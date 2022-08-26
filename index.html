@@ -1,71 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>황윤지 포트폴리오</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'><link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- 메뉴는 fullpage 바깥에 추가 
-  data-menuanchor와 동명의 섹셕 id 값을 fullpage({}) 옵션anchors[]에 추가
+  <!-- 메뉴는 fullpage 바깥에 추가 
+  data-menuanchor와 동명의 섹션 id 값을 fullpage({}) 옵션anchors[]에 추가
 -->
-<ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
-	<li data-menuanchor="thirdPage"><a href="#thirdPage">WORK</a></li>
-	<li data-menuanchor="fourthPage"><a href="#fourthPage">CONTACT</a></li>
-</ul>
-<div id="fullpage">
+  <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">SKILLS</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">WORKS</a></li>
+  </ul>
+  <div id="fullpage">
     <div class="section" id="section1">
-      <h1>Web<br>Designer<!--<br>Portfolio--></h1>
+      <h1>Web<br>Designer
+        <!--<br>Portfolio-->
+      </h1>
     </div>
     <div class="section" id="section2">
-      <h1>My Works</h1>
-        <div class="slide" data-anchor="slide1">
-          <ul>
-            <li>
-              <img src="http://placeimg.com/300/300/a" alt="">
-              <img src="http://placeimg.com/300/300/b" alt="">
-            </li>
-            <li>
-              <h4>멋진 나의 작품 1</h4>
-              <p>황윤지<br>
-                2000.12.06<br>
-                인천광역시 강화군<br>
-                010-2559-0562</p>
-            </li>
-          </ul>
-        </div>
-        <div class="slide" data-anchor="slide2">
-          <ul>
-            <li>
-              <img src="http://placeimg.com/300/300/c" alt="">
-              <img src="http://placeimg.com/300/300/d" alt="">
-            </li>
-            <li>
-              <h4>멋진 나의 작품 2</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae.</p>
-            </li>
-          </ul>
-        </div>
+      <h1>PROFILE</h1>
+      <p>황윤지<br>
+        2000.12.06<br>
+        인천광역시 강화군<br>
+        010-2559-0562
+      </p>
+      
     </div>
     <div class="section" id="section3">
-      <h1>Third</h1>
+      <h1>SKILLS</h1>
+      <img src="./images/Ps.png" alt="포토샵">
+      <img src="./images/Ai.png" alt="일러스트레이터">
+      <img src="./images/HTML.png" alt="HTML">
+      <img src="./images/CSS.png" alt="CSS">
+      <img src="./images/JS.png" alt="JavaScript">
+      <img src="./images/Jquery.png" alt="Jquery">
+      
       <img src="./rocket.png" alt="rocket" id="rocket">
     </div>
     <div class="section" id="section4">
-      <h1>저에 대해 더 궁금하신 점이 있다면</h1>
-      <div class="contact">
-        <h3>카카오톡 아이디<br>이메일</h3>
-        <h3>Yji126<br>slfmgbw6@naver.com</h3>
+      <h1>WORKS</h1>
+      <div class="slide" data-anchor="slide1">
+        <ul>
+          <li>
+            <img src="http://placeimg.com/300/300/a" alt="">
+            <img src="http://placeimg.com/300/300/b" alt="">
+          </li>
+          <li>
+            <h4>멋진 나의 작품 1</h4>
+          </li>
+        </ul>
       </div>
-      <h1>둘 중 편하신 곳으로 연락주세요!</h1>
+      <div class="slide" data-anchor="slide2">
+        <ul>
+          <li>
+            <img src="http://placeimg.com/300/300/c" alt="">
+            <img src="http://placeimg.com/300/300/d" alt="">
+          </li>
+          <li>
+            <h4>멋진 나의 작품 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae.</p>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-<!-- partial -->
+
+    <div class="section footer-wrap fp-auto-height">
+      <div class="footer">
+        <div id="btnGoTop">
+          <button>Go Top</button>
+          
+        </div>
+        <h2>저에 대해 더 궁금하신 점이 있다면</h2>
+        <div class="contact">
+          <h3>카카오톡 아이디<br>이메일</h3>
+          <h3>Yji126<br>slfmgbw6@naver.com</h3>
+        </div>
+        <h2>둘 중 편하신 곳으로 연락주세요!</h2>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>
