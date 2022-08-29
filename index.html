@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>황윤지 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
-  <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,54 +23,213 @@
   </ul>
   <div id="fullpage">
     <div class="section" id="section1">
-      <h1>Web<br>Designer
-        <!--<br>Portfolio-->
-      </h1>
-    </div>
-    <div class="section" id="section2">
-      <h1>PROFILE</h1>
-      <p>황윤지<br>
-        2000.12.06<br>
-        인천광역시 강화군<br>
-        010-2559-0562
-      </p>
-      
-    </div>
-    <div class="section" id="section3">
-      <h1>SKILLS</h1>
-      <img src="./images/Ps.png" alt="포토샵">
-      <img src="./images/Ai.png" alt="일러스트레이터">
-      <img src="./images/HTML.png" alt="HTML">
-      <img src="./images/CSS.png" alt="CSS">
-      <img src="./images/JS.png" alt="JavaScript">
-      <img src="./images/Jquery.png" alt="Jquery">
-      
-      <img src="./rocket.png" alt="rocket" id="rocket">
-    </div>
-    <div class="section" id="section4">
-      <h1>WORKS</h1>
-      <div class="slide" data-anchor="slide1">
-        <ul>
-          <li>
-            <img src="http://placeimg.com/300/300/a" alt="">
-            <img src="http://placeimg.com/300/300/b" alt="">
-          </li>
-          <li>
-            <h4>멋진 나의 작품 1</h4>
-          </li>
-        </ul>
+      <div class="title">
+        <div class="text">
+          <div class="typing-txt">
+            <ul>
+              <li>UI/UX 디자이너</li>
+              <li>웹디자이너</li>
+              <li>웹퍼블리셔</li>
+            </ul>
+          </div>
+          안녕하세요!<br>
+          <p class="typing"></p><br>
+          황윤지입니다.
+        </div>
+        <div class="img">
+          <img src="./images/" alt="img">
+        </div>
       </div>
-      <div class="slide" data-anchor="slide2">
-        <ul>
-          <li>
-            <img src="http://placeimg.com/300/300/c" alt="">
-            <img src="http://placeimg.com/300/300/d" alt="">
-          </li>
-          <li>
-            <h4>멋진 나의 작품 2</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae.</p>
-          </li>
-        </ul>
+    </div>
+
+    <div class="section" id="section2">
+      <div class="profile-">
+        <div class="img">
+          <img src="./images/" alt="이미지">
+        </div>
+        <div class="Profile">
+          <h4>Profile</h4>
+          <p>황윤지<br>
+            2000.12.06<br>
+            인천광역시 강화군<br>
+            010-2559-0562
+          </p>
+        </div>
+        <div class="Certificate">
+          <h4>Certificate</h4>
+          <p>GTQ 1급<br>
+            웹디자인 기능사 (필기)
+          </p>
+        </div>
+        <div class="Education">
+          <h4>Education</h4>
+          <p>2022. 09&emsp;[디지털디자인]모바일 UI/UX 반응형 웹디자인(웹퍼블리셔) 수료
+            <br>
+            2021. 02&emsp;배화여자대학교 패션산업과 졸업
+            <br>
+            2019. 02&emsp;강화여자고등학교 졸업
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <div class="skills">
+        <div class="col">
+          <img src="./images/Ps.png" alt="포토샵">
+          <div class="zt-skill-bar">
+            <div data-width="88">포토샵<span>88%</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/Ai.png" alt="일러스트레이터">
+          <div class="zt-skill-bar">
+            <div data-width="72">일러스트레이터<span>72%</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/HTML.png" alt="HTML">
+          <div class="zt-skill-bar">
+            <div data-width="82">HTML<span>82%</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/CSS.png" alt="CSS">
+          <div class="zt-skill-bar">
+            <div data-width="80">CSS<span>80%</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/JS.png" alt="JavaScript">
+          <div class="zt-skill-bar">
+            <div data-width="60">JavaScript<span>60%</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/Jquery.png" alt="Jquery" class="img">
+          <div class="zt-skill-bar">
+            <div data-width="60">Jquery<span>60%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section4">
+      <div class="slide" data-anchor="slide1">
+        <h4 class="type">반응형 사이트</h4>
+        <div class="work">
+          <div class="info">
+            <h4>올림푸스 코리아</h4>
+            <h6><span>작업기간</span><br>
+              2022.08.03 ~ 08.16
+            </h6>
+            <h6><span>기여도</span><br>
+              20% - 팀 작업물(5명)<br>
+              디자인 - 회사소개, 인사제도<br>
+              퍼블리싱 - 헤더(모바일), 푸터(pc, 모바일), 관련문의(pc, 모바일)
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="https://hwangyunji.github.io/Olympus-Korea/" target="_blank" class="page">페이지 이동</a>
+              <a href="#" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/orympus.png" alt="올림푸스 코리아">
+        </div>
+      </div>
+
+      <div class="slide" data-anchor="slide1">
+        <h4 class="type">모바일 사이트</h4>
+        <div class="work">
+          <div class="info">
+            <h4>광주광역시 동물보호소</h4>
+            <h6><span>작업기간</span><br>
+              2022.08.03 ~ 08.16
+            </h6>
+            <h6><span>기여도</span><br>
+              50% - 팀 작업물(5명)
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="#" target="_blank" class="page">페이지 이동</a>
+              <a href="#" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/.png" alt="광주광역시 동물보호센터">
+        </div>
+      </div>
+
+      <div class="slide" data-anchor="slide1">
+        <h4 class="type">반응형 사이트</h4>
+        <div class="work">
+          <div class="info">
+            <h4>333</h4>
+            <h6><span>작업기간</span><br>
+              2022.08.03 ~ 08.16
+            </h6>
+            <h6><span>기여도</span><br>
+              100% - 개인 작업물
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="#" target="_blank" class="page">페이지 이동</a>
+              <a href="#" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./imagess.png" alt="333">
+        </div>
+      </div>
+
+      <div class="slide" data-anchor="slide1">
+        <h4 class="type">반응형 사이트</h4>
+        <div class="work">
+          <div class="info">
+            <h4>444</h4>
+            <h6><span>작업기간</span><br>
+              2022.08.03 ~ 08.16
+            </h6>
+            <h6><span>기여도</span><br>
+              100% - 개인 작업물
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="#" target="_blank" class="page">페이지 이동</a>
+              <a href="#" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/.png" alt="444">
+        </div>
+      </div>
+
+      <div class="slide" data-anchor="slide1">
+        <h4 class="type">반응형 사이트</h4>
+        <div class="work">
+          <div class="info">
+            <h4>555</h4>
+            <h6><span>작업기간</span><br>
+              2022.08.03 ~ 08.16
+            </h6>
+            <h6><span>기여도</span><br>
+              100% - 개인 작업물
+            </h6>
+            <h6><span>사용툴</span><br>
+              Figma, Adobe Photoshop, Visual Studio Code
+            </h6>
+            <div class="add">
+              <a href="#" target="_blank" class="page">페이지 이동</a>
+              <a href="#" target="_blank" class="detail">상세정보</a>
+            </div>
+          </div>
+          <img src="./images/.png" alt="555">
+        </div>
       </div>
     </div>
 
@@ -76,21 +237,19 @@
       <div class="footer">
         <div id="btnGoTop">
           <button>Go Top</button>
-          
         </div>
-        <h2>저에 대해 더 궁금하신 점이 있다면</h2>
-        <div class="contact">
-          <h3>카카오톡 아이디<br>이메일</h3>
-          <h3>Yji126<br>slfmgbw6@naver.com</h3>
-        </div>
-        <h2>둘 중 편하신 곳으로 연락주세요!</h2>
+        <p>카카오톡 아이디&emsp;Yji126
+          <br>이메일&emsp;slfmgbw6@naver.com<br><br>
+          Copyright 2022. Hwangyunji. All rights reserved.<br>
+          본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+        </p>
       </div>
     </div>
   </div>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
