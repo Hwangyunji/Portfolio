@@ -55,12 +55,12 @@ a {
 .section {
   /* text-align: center; */
   /* font-size: 3em; */
-  padding: 0 200px;
+  padding: 0 300px;
   background: pink;
 }
 
 #section1 {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   font-weight: 500;
   font-size: 80px;
 }
@@ -106,9 +106,9 @@ a {
 }
 
 
-#section2 {
+/* #section2 {
   padding-top: 50px;
-}
+} */
 
 .profile- {
   display: flex;
@@ -127,12 +127,12 @@ a {
 }
 
 .Profile {
-  margin: 0 100px;
+  margin: 0 200px;
 }
 
 .Education {
   position: absolute;
-  left: 500px;
+  left: 600px;
   top: 250px;
 }
 
@@ -239,6 +239,10 @@ a {
   background: #E7E8F2;
 }
 
+/* .slide2 {
+  background: #F1F7E6;
+} */
+
 .slide .type {
   /* position: absolute; */
   display: flex;
@@ -283,11 +287,11 @@ a {
 
 /* slider arrow */
 .fp-controlArrow.fp-prev {
-  left: 50px;
+  left: 100px;
 }
 
 .fp-controlArrow.fp-next {
-  right: 50px;
+  right: 100px;
 }
 
 
@@ -303,4 +307,8 @@ a {
   justify-content: center;
   text-align: center;
   gap: 20px;
+}
+
+.footer p {
+  font-size: 14px;
 }
