@@ -1,4 +1,4 @@
-## 사이트 링크
+# 황윤지 포트폴리오
 - https://hwangyunji.github.io/Portfolio/
 
 ![포폴 대표사진](https://user-images.githubusercontent.com/105402299/187354609-6b938521-ff59-4472-97e7-2b15ea6d7533.JPG)
