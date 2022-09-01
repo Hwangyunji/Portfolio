@@ -1,10 +1,10 @@
-# 황윤지 포트폴리오
-https://hwangyunji.github.io/Portfolio/
+## 사이트 링크
+## 홈페이지 주소
+- https://hwangyunji.github.io/Portfolio/
 
-![포폴 대표사진](https://user-images.githubusercontent.com/105402299/187354609-6b938521-ff59-4472-97e7-2b15ea6d7533.JPG)
+![포폴 대표사진](https://user-images.githubusercontent.com/105402299/187316701-3a0a2a9f-aefe-4493-a99a-dd507b7b1fb2.JPG)
 
-
-## 사이트 설명
+## 기능 소개
 - 풀페이지 구성의 화면 전환
 - 메인 페이지의 CSS와 JS를 이용한 타이핑 효과
 - CSS와 JS를 이용한 막대 그래프
