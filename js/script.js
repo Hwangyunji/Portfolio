@@ -3,24 +3,11 @@ $(document).ready(function () {
     //options here
     // responsiveWidth: 1000, // fullpage 해제 분기점
     // sectionsColor: ['gold', '#1abc9c', '#C0C0C0', 'pink'],
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+    anchors: ['HOME', 'PROFILE', 'SKILLS', 'WORKS', 'FOOTER'],
     menu: '#enu',
     navigation: true,
     navigationTooltips: ['HOME', 'PROFILE', 'SKILLS', 'WORKS', 'FOOTER'],
     navigationPosition: 'right',
-
-
-    //methods
-    // 페이지 진입시
-    // afterLoad: function (anchorLink, index) {
-    //   console.log(index);
-    //   if (index == 3) {
-    //     $('#section3 > div').append('<p>원대한 꿈에 도약합니다!</p>');
-    //     $('#rocket').addClass('play');
-    //   } else {
-    //     $('#rocket').removeClass('play');
-    //   }
-    // }
   });
 
 
@@ -49,7 +36,7 @@ $(document).ready(function () {
   if (typingBool == false) {
     // 타이핑이 진행되지 않았다면 
     typingBool = true;
-    tyInt = setInterval(typing, 200); // 첫번재 반복동작 
+    tyInt = setInterval(typing, 150); // 첫번재 반복동작 
   }
 
   function typing() {
@@ -59,11 +46,11 @@ $(document).ready(function () {
       // 한글자씩 이어준다. 
       typingIdx++;
       if (typingIdx == typingTxt.length) {
-        //첫번째 단어가 써지면 1분쉰다.
+        //첫번째 단어가 써지면 3초 쉰다.
         clearInterval(tyInt);
         setTimeout(function () {
-          tyInt = setInterval(typing, 200);
-        }, 1000);
+          tyInt = setInterval(typing, 150);
+        }, 2000);
       }
     } else {
 
@@ -84,42 +71,61 @@ $(document).ready(function () {
         del = -1;
         typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
 
-        //1분후 다음분장 타이핑 
+        //1초후 다음문장 타이핑 
         clearInterval(tyInt);
         setTimeout(function () {
-          tyInt = setInterval(typing, 200);
-        }, 1000);
+          tyInt = setInterval(typing, 150);
+        }, 2000);
       }
 
 
     }
   }
 
+  // (function ($) {
+  //   "use strict";
+  //   $(function () {
+  //     function animated_contents() {
+  //       $(".zt-skill-bar > div ").each(function (i) {
+  //         var $this = $(this),
+  //           skills = $this.data('width');
+  
+  //         $this.css({
+  //           'width': skills + '%'
+  //         });
+  
+  //       });
+  //     }
+  
+  //     if (jQuery().appear) {
+  //       $('.zt-skill-bar').appear().on('appear', function () {
+  //         animated_contents();
+  //       });
+  //     } else {
+  //       animated_contents();
+  //     }
+  //   });
+  // }(jQuery));
 
 });
 
-
-(function ($) {
-  "use strict";
-  $(function () {
-    function animated_contents() {
-      $(".zt-skill-bar > div ").each(function (i) {
-        var $this = $(this),
-          skills = $this.data('width');
-
-        $this.css({
-          'width': skills + '%'
-        });
-
-      });
-    }
-
-    if (jQuery().appear) {
-      $('.zt-skill-bar').appear().on('appear', function () {
-        animated_contents();
-      });
-    } else {
-      animated_contents();
-    }
+$(document).ready(function () {
+  $(".orange-paint").click(function () {
+      $(".text").toggleClass("orange")
   });
-}(jQuery));
+
+  $(".pink-paint").click(function () {
+      $(".text").toggleClass("pink")
+  });
+  $(".green-paint").click(function () {
+      $(".text").toggleClass("green")
+  });
+  $(".purple-paint").click(function () {
+      $(".text").toggleClass("purple")
+  });
+  $(".blue-paint").click(function () {
+      $(".text").toggleClass("blue")
+  });
+});
+
+

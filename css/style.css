@@ -1,31 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 ul {
   list-style-type: none;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-h3 {
-  font-size: 30px;
-}
-
-h4 {
-  font-size: 25px;
-}
-
-p {
-  font-size: 20px;
 }
 
 a {
@@ -51,12 +32,25 @@ a {
   line-height: 100px;
 }
 
+#menu li a {
+  color: #ff6f79;
+}
+
+#fp-nav ul li a span {
+  color: #ff6f79;
+  background: #ff6f79;
+  outline: 1px solid red;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #000;
+}
 
 .section {
   /* text-align: center; */
   /* font-size: 3em; */
   padding: 0 300px;
-  background: pink;
+  background: #fff;
 }
 
 #section1 {
@@ -65,16 +59,8 @@ a {
   font-size: 80px;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#section1 .img {
-  width: 300px;
-  height: 300px;
-  background: #999;
+.text {
+  text-align: center;
 }
 
 .typing-txt {
@@ -104,6 +90,60 @@ a {
     border-right: 1px solid #fff
   }
 }
+
+.img {
+  position: relative;
+}
+.img .orange-paint {
+  position: absolute;
+  top: -380px;
+  left: 1200px;
+}
+.img .green-paint {
+  position: absolute;
+  top: -300px;
+  left: -50px;
+}
+.img .purple-paint {
+  position: absolute;
+  top: 180px;
+  left: 400px;
+}
+.img .blue-paint {
+  position: absolute;
+  top: -500px;
+  left: -60px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  display: flex;
+  position: absolute;
+}
+
+#section1 img {
+  width: 300px;
+}
+
+.pink {
+  color: #ff6f79;
+}
+.orange {
+  color: #ff7200;
+}
+.green {
+  color: #5dae0d;
+}
+.purple {
+  color: #c23bfe;
+}
+.blue {
+  color: #5590fe;
+}
+
+
+
 
 
 /* #section2 {
