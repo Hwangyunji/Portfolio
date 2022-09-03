@@ -54,10 +54,10 @@ a {
 
 #section1, #section2, #section3 {
   background: #fff;
-  background-image: url(../images/bg-img.png);
+/*   background-image: url(../images/bg-img.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 110% 90%;
+  background-size: 110% 90%; */
 }
 
 #section1 {
