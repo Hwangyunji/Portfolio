@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>황윤지 포트폴리오</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,109 +17,83 @@
   data-menuanchor와 동명의 섹션 id 값을 fullpage({}) 옵션anchors[]에 추가
 -->
   <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">SKILLS</a></li>
-    <li data-menuanchor="fourthPage"><a href="#fourthPage">WORKS</a></li>
+    <li data-menuanchor="HOME" class="active"><a href="#HOME">HOME</a></li>
+    <li data-menuanchor="PROFILE"><a href="#PROFILE">PROFILE</a></li>
+    <li data-menuanchor="WORK"><a href="#WORK">WORK</a></li>
+    <li data-menuanchor="CONTACT"><a href="#CONTACT">CONTACT</a></li>
   </ul>
   <div id="fullpage">
     <div class="section" id="section1">
-      <div class="title">
-        <div class="text">
-          <div class="typing-txt">
-            <ul>
-              <li>UI/UX 디자이너</li>
-              <li>웹디자이너</li>
-              <li>웹퍼블리셔</li>
-            </ul>
-          </div>
-          안녕하세요!<br>
-          <p class="typing"></p><br>
-          황윤지입니다.
-        </div>
-<!--         <div class="img">
-          <button class="pink-paint"><img src="./images/paintbrush.png" alt="pink-paint"></button>
-          <button class="orange-paint"><img src="./images/paintbrush1.png" alt="orange-paint"></button>
-          <button class="green-paint"><img src="./images/paintbrush2.png" alt="green-paint"></button>
-          <button class="purple-paint"><img src="./images/paintbrush3.png" alt="purple-paint"></button>
-          <button class="blue-paint"><img src="./images/paintbrush4.png" alt="blue-paint"></button>
-        </div> -->
+      <p class="top">WEB</p>
+      <div class="typing-txt1">
+        <ul>
+          <li>HELLO,</li>
+          <li></li>
+        </ul>
       </div>
+      <div class="typing-txt2">
+        <ul>
+          <li>WORLD!</li>
+          <li>WELCOME TO MY PORTFOLIO!</li>
+        </ul>
+      </div>
+      <div class="typing">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <p class="bottom">DESIGNER</p>
     </div>
 
     <div class="section" id="section2">
-      <div class="profile-">
-        <div class="img">
-          <img src="./images/" alt="이미지">
+      <div class="profile">
+        <div class="left">
+          <img src="" alt="사진">
         </div>
-        <div class="Profile">
-          <h4>Profile</h4>
-          <p>황윤지<br>
-            2000.12.06<br>
-            인천광역시 강화군<br>
-            010-2559-0562
-          </p>
+        <div class="center">
+          <div class="col">
+            <h4>Name</h4>
+            <p>황윤지</p>
+          </div>
+          <div class="col">
+            <h4>Birth</h4>
+            <p>2000.12.06</p>
+          </div>
+          <div class="col">
+            <h4>Certificate</h4>
+            <p>GTQ 1급<br>
+              웹디자인 기능사 (필기)
+            </p>
+          </div>
         </div>
-        <div class="Certificate">
-          <h4>Certificate</h4>
-          <p>GTQ 1급<br>
-            웹디자인 기능사 (필기)
-          </p>
-        </div>
-        <div class="Education">
-          <h4>Education</h4>
-          <p>2022. 09&emsp;[디지털디자인]모바일 UI/UX 반응형 웹디자인(웹퍼블리셔) 수료
-            <br>
-            2021. 02&emsp;배화여자대학교 패션산업과 졸업
-            <br>
-            2019. 02&emsp;강화여자고등학교 졸업
-          </p>
+        <div class="right">
+          <div class="col">
+            <h4>Education</h4>
+            <p>2022. 09&emsp;김포이젠아카데미 UI/UX 반응형 웹디자인 수료
+              <br>
+              2021. 02&emsp;배화여자대학교 패션산업과 졸업
+              <br>
+              2019. 02&emsp;강화여자고등학교 졸업
+            </p>
+          </div>
+          <div class="col">
+            <h4>Skill</h4>
+            <div class="skill">
+              <img src="./images/HTML.png" alt="HTML">
+              <img src="./images/CSS.png" alt="CSS">
+              <img src="./images/JS.png" alt="JS">
+              <img src="./images/Figma.png" alt="Figma">
+              <img src="./images/Ps.png" alt="Ps">
+              <img src="./images/Ai.png" alt="Ai">
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="section" id="section3">
-      <div class="skills">
-        <div class="col">
-          <img src="./images/Ps.png" alt="포토샵">
-          <div class="zt-skill-bar">
-            <div data-width="88">포토샵<span>88%</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./images/Ai.png" alt="일러스트레이터">
-          <div class="zt-skill-bar">
-            <div data-width="72">일러스트레이터<span>72%</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./images/HTML.png" alt="HTML">
-          <div class="zt-skill-bar">
-            <div data-width="82">HTML<span>82%</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./images/CSS.png" alt="CSS">
-          <div class="zt-skill-bar">
-            <div data-width="80">CSS<span>80%</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./images/JS.png" alt="JavaScript">
-          <div class="zt-skill-bar">
-            <div data-width="60">JavaScript<span>60%</span></div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="./images/Jquery.png" alt="Jquery" class="img">
-          <div class="zt-skill-bar">
-            <div data-width="60">Jquery<span>60%</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="section4">
       <div class="slide slide1" data-anchor="slide1">
         <h4 class="type">반응형 사이트</h4>
         <div class="work">
@@ -238,13 +213,20 @@
       </div>
     </div>
 
-    <div class="section footer-wrap fp-auto-height">
+    <div class="section" id="section4">
       <div class="footer">
         <div id="btnGoTop">
           <button>Go Top</button>
         </div>
-        <p>카카오톡 아이디&emsp;Yji126
-          <br>이메일&emsp;slfmgbw6@naver.com<br><br>
+        <div class="contact">
+          <img src="./images/phone.png" alt="전화번호">
+          <p>010-2559-0562</p>
+          <img src="./images/kakaotalk.png" alt="카카오톡 아이디">
+          <p>@Yji126</p>
+          <img src="./images/mail.png" alt="메일주소">
+          <p>slfmgbw6@naver.com</p>
+        </div>
+      
           Copyright 2022. Hwangyunji. All rights reserved.<br>
           본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
         </p>
