@@ -246,6 +246,41 @@ a {
   color: #fff;
 }
 
+.slide3 .type h6 {
+  color: #7E5E38;
+  border: 2px solid #7E5E38;
+}
+.slide3 .work .info h4 {
+  color: #7E5E38;
+}
+
+.slide3 .work .info h6 span {
+  color: #7E5E38;
+}
+
+.slide3 .work .info a {
+  background: #7E5E38;
+  color: #fff;
+}
+
+.slide4 .type h6 {
+  color: #2285D6;
+  border: 2px solid #2285D6;
+}
+.slide4 .work .info h4 {
+  color: #2285D6;
+}
+
+.slide4 .work .info h6 span {
+  color: #2285D6;
+}
+
+.slide4 .work .info a {
+  background: #2285D6;
+  color: #fff;
+}
+
+
 
 /* slider arrow */
 .fp-controlArrow.fp-prev {
@@ -299,9 +334,8 @@ a {
   font-weight: 700;
 }
 
-.footer .copy p {
+.footer .copy {
   position: absolute;
   bottom: 0;
-  text-align: center;
-  align-items: center;
+  left: 650px;
 }
