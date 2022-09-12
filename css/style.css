@@ -301,6 +301,12 @@ a {
   text-align: center;
 }
 
+.footer h1 {
+  font-size: 50px;
+  color: #c471f5;
+  padding-bottom: 100px;
+}
+
 .footer .contact {
   display: flex;
   justify-content: space-between;
@@ -332,10 +338,4 @@ a {
 .footer p span {
   font-size: 24px;
   font-weight: 700;
-}
-
-.footer .copy {
-  position: absolute;
-  bottom: 0;
-  left: 650px;
 }
