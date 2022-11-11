@@ -19,7 +19,7 @@ a {
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 20px;
     width: 100vw;
     height: 40px;
     background: transparent;
@@ -70,18 +70,19 @@ a {
 .bottom {
     position: absolute;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 65px;
+    letter-spacing: -0.1em;
 }
 
 #section1 .top {
-    left: 10px;
-    top: 50px;
+    left: 0px;
+    top: 20px;
     color: rgba(233, 222, 250, 0.3);
 }
 
 #section1 .bottom {
-    right: 110px;
-    bottom: 0px;
+    right: 10px;
+    bottom: -10px;
     color: rgba(251, 252, 219, 0.3);
 }
 
@@ -92,7 +93,7 @@ a {
 
 .typing ul li {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .typing ul li.on {
@@ -310,10 +311,10 @@ a {
 }
 
 .contact h1 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     color: #c471f5;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .contact .sns {
