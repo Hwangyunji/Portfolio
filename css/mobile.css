@@ -36,7 +36,7 @@ a {
     color: #c471f5;
 }
 
-#menu li a:hover {
+#menu li a:active {
     text-decoration: underline;
 }
 
@@ -49,8 +49,7 @@ a {
 }
 
 .section {
-    padding: 0 20px;
-    outline: 1px solid red;
+    padding: 0 50px;
 }
 
 #section1 {
@@ -92,8 +91,8 @@ a {
 }
 
 .typing ul li {
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .typing ul li.on {
@@ -101,13 +100,6 @@ a {
     animation-name: cursor;
     animation-duration: 0.3s;
     animation-iteration-count: infinite;
-}
-
-.typing ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    outline: 1px solid red;
 }
 
 @keyframes cursor {
@@ -126,21 +118,34 @@ a {
 
 #section2 .profile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
 }
 
+#section2 .profile .left {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid red;
+}
+
+/* #section2 .profile .left .mc {
+    display: b;
+} */
+
 #section2 .profile .col {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #section2 .profile .col h4 {
-    font-size: 18px;
-    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 8px;
 }
 
 #section2 .profile .col p {
     font-size: 14px;
-    line-height: 40px;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 #section2 .profile .skill {
@@ -150,7 +155,7 @@ a {
 }
 
 #section2 .profile .skill img {
-    height: 30px;
+    height: 40px;
 }
 
 
@@ -287,14 +292,14 @@ a {
 
 /* slider arrow */
 .fp-controlArrow.fp-prev {
+    display: none;
     left: 50px;
     border-color: transparent #c471f5;
 }
 
 .fp-controlArrow.fp-next {
-    outline: 1px solid red;
-    right: 50px;
     display: none;
+    right: 50px;
     border-color: transparent #c471f5;
 }
 
@@ -307,13 +312,18 @@ a {
 }
 
 .contact h1 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 700;
     color: #c471f5;
     padding-bottom: 100px;
 }
 
 .contact .sns {
     display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-between;
+    /* outline: 1px solid red; */
 }
 
 .contact .sns .phone,
@@ -323,28 +333,17 @@ a {
 }
 
 .contact img {
-    height: 100px;
-    padding-right: 10px;
+    height: 40px;
+    padding-left: 35px;
+    padding-right: 15px;
 }
 
 .contact a {
+    display: flex;
+    align-items: center;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     margin-right: 20px;
     /* outline: 1px solid red; */
-}
-
-.contact a span {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.contact p {
-    font-size: 14px;
-    margin-right: 20px;
-}
-
-.contact p span {
-    font-size: 18px;
-    font-weight: 700;
 }
