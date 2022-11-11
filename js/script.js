@@ -53,12 +53,12 @@ $(document).ready(function () {
             $(".typing>ul>li").removeClass("on")
           }, 500);
         } else {
-          //첫번째 단어가 써지면 1분쉰다.
+          //첫번째 단어가 써지면 2초 쉰다.
 
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
-          }, 1000);
+          }, 2000);
         }
       }
     } else {
