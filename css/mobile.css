@@ -165,7 +165,7 @@ a {
 
 .slide .type h6 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0 10px;
     border-radius: 50px;
 }
@@ -203,7 +203,7 @@ a {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 #section3 .slide .work .info .add a {
@@ -214,7 +214,7 @@ a {
 }
 
 #section3 .slide img {
-    height: 250px;
+    height: 230px;
 }
 
 #section3 .slide .pc {
