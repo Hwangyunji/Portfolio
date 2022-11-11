@@ -75,7 +75,7 @@ a {
 }
 
 #section1 .top {
-    left: 0px;
+    left: 5px;
     top: 20px;
     color: rgba(233, 222, 250, 0.3);
 }
@@ -93,7 +93,7 @@ a {
 
 .typing ul li {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .typing ul li.on {
@@ -308,10 +308,13 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .contact h1 {
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
     font-weight: 700;
     color: #c471f5;
     padding-bottom: 50px;
@@ -322,18 +325,13 @@ a {
     flex-direction: column;
     height: 160px;
     justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
     /* outline: 1px solid red; */
-}
-
-.contact .sns .phone,
-.kakao,
-.e-mail {
-    display: flex;
 }
 
 .contact img {
     height: 40px;
-    padding-left: 35px;
     padding-right: 15px;
 }
 
