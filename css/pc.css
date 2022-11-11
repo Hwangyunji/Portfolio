@@ -322,20 +322,8 @@ a {
 }
 
 .contact a {
+  display: flex;
+  align-items: center;
   color: #000;
   font-size: 20px;
-}
-
-.contact a span {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.contact p {
-  font-size: 20px;
-}
-
-.contact p span {
-  font-size: 24px;
-  font-weight: 700;
 }

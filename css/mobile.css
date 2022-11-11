@@ -18,19 +18,20 @@ a {
     position: fixed;
     z-index: 99;
     display: flex;
-    justify-content: center;
-    /* outline: 1px solid red; */
-    width: 100%;
-    height: 50px;
+    justify-content: space-between;
+    margin: 0 15px;
+    width: 100vw;
+    height: 40px;
     background: transparent;
-    font-size: 20px;
-    font-weight: 700;
-    /* outline: 1px solid red; */
+    font-size: 16px;
+    font-weight: 500;
+    outline: 1px solid red;
 }
 
 #menu li {
-    margin: 0 20px;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
+    outline: 1px solid red;
 }
 
 #menu li a {
@@ -50,10 +51,8 @@ a {
 }
 
 .section {
-    /* text-align: center; */
-    /* font-size: 3em; */
-    padding: 0 300px;
-    /* background: #89438c; */
+    padding: 0 20px;
+    outline: 1px solid red;
 }
 
 #section1 {
@@ -74,8 +73,7 @@ a {
 .bottom {
     position: absolute;
     font-weight: 700;
-    font-size: 100px;
-    letter-spacing: -0.1em;
+    font-size: 50px;
 }
 
 #section1 .top {
