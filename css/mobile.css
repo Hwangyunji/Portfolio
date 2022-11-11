@@ -119,18 +119,7 @@ a {
 #section2 .profile {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
 }
-
-#section2 .profile .left {
-    display: flex;
-    flex-direction: column;
-    outline: 1px solid red;
-}
-
-/* #section2 .profile .left .mc {
-    display: b;
-} */
 
 #section2 .profile .col {
     padding-bottom: 20px;
@@ -139,19 +128,23 @@ a {
 #section2 .profile .col h4 {
     font-size: 16px;
     font-weight: 500;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 #section2 .profile .col p {
     font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
+    font-weight: 350;
+    line-height: 25px;
+}
+
+#section2 .profile .col span {
+    font-size: 13px;
+    color: #333;
 }
 
 #section2 .profile .skill {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
 }
 
 #section2 .profile .skill img {
@@ -160,7 +153,6 @@ a {
 
 
 #section3 {
-    position: relative;
     background: #fff;
 }
 
@@ -172,8 +164,10 @@ a {
 
 #section3 .slide .work {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     padding-top: 50px;
+    outline: 1px solid red;
 }
 
 .slide h6 {
@@ -212,7 +206,11 @@ a {
 }
 
 #section3 .slide img {
-    height: 40px;
+    height: 200px;
+}
+
+#section3 .slide .pc {
+    display: none;
 }
 
 

@@ -156,7 +156,6 @@ a {
 
 
 #section3 {
-  position: relative;
   background: #fff;
 }
 
@@ -209,6 +208,10 @@ a {
 
 #section3 .slide img {
   height: 400px;
+}
+
+#section3 .slide .mobile {
+  display: none;
 }
 
 
