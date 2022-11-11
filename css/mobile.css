@@ -19,19 +19,17 @@ a {
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    margin: 0 15px;
+    padding: 0 15px;
     width: 100vw;
     height: 40px;
     background: transparent;
     font-size: 16px;
     font-weight: 500;
-    outline: 1px solid red;
 }
 
 #menu li {
     display: flex;
     align-items: center;
-    outline: 1px solid red;
 }
 
 #menu li a {
@@ -43,11 +41,11 @@ a {
 }
 
 #fp-nav ul li a span {
-    background: #c471f5
+    background: #c471f5;
 }
 
 #fp-nav ul li .fp-tooltip {
-    color: #c471f5
+    color: #c471f5;
 }
 
 .section {
@@ -294,7 +292,9 @@ a {
 }
 
 .fp-controlArrow.fp-next {
+    outline: 1px solid red;
     right: 50px;
+    display: none;
     border-color: transparent #c471f5;
 }
 
