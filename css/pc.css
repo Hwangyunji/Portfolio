@@ -286,7 +286,7 @@ a {
   display: flex;          /* Flexbox 레이아웃 적용 */
   flex-wrap: wrap;        /* 필요 시 줄바꿈 허용 */
   justify-content: center; /* 이미지들을 가운데 정렬 */
-  gap: 20px;              /* 이미지 간격 설정 (원하는 값으로 조정 가능) */
+  gap: 0px;              /* 이미지 간격 설정 (원하는 값으로 조정 가능) */
 }
 
 .slide4 .work .images a {
@@ -294,7 +294,7 @@ a {
 }
 
 .slide4 .work .images img {
-  max-width: 200px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  max-width: 150px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
   height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
 
