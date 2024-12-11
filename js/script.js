@@ -98,3 +98,17 @@ $(document).ready(function () {
 
 
 });
+
+function openTab(evt, galleryId) {
+  // 모든 탭 콘텐츠 숨기기
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(content => content.classList.remove('active'));
+
+  // 모든 탭 버튼의 active 클래스 제거
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => button.classList.remove('active'));
+
+  // 선택한 탭 콘텐츠와 버튼에 active 클래스 추가
+  document.getElementById(galleryId).classList.add('active');
+  evt.currentTarget.classList.add('active');
+}
