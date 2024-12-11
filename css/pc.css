@@ -268,12 +268,12 @@ a {
 
 .slide4 .type h6 {
   color: #E9DEFA;
-  border: 2px solid #2285D6;
+  border: 2px solid #E9DEFA;
 }
 
 .slide5 .type h6 {
   color: #FBFCDB;
-  border: 2px solid #2285D6;
+  border: 2px solid #FBFCDB;
 }
 
 .slide4 .work .image,
@@ -282,18 +282,12 @@ a {
   justify-content: center;
 }
 
-.slide4 .work .images {
-  display: flex;          /* Flexbox 레이아웃 적용 */
-  justify-content: center; /* 이미지들을 가운데 정렬 */
-  gap: 0px;              /* 이미지 간격 설정 (원하는 값으로 조정 가능) */
-}
-
 .slide4 .work .images a {
   display: inline-block;
 }
 
 .slide4 .work .images img {
-  max-width: 100px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  max-width: 50px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
 }
 
 .slide4 .work .images a img {
