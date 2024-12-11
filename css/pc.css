@@ -334,3 +334,51 @@ a {
   color: #000;
   font-size: 20px;
 }
+
+/* 스타일 초기화 */
+.slide4 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 탭 버튼 스타일 */
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #666;
+  color: white;
+}
+
+/* 탭 콘텐츠 스타일 */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab-content img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tab-content img:hover {
+  transform: scale(1.1);
+}
