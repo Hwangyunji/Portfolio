@@ -286,10 +286,6 @@ a {
   display: inline-block;
 }
 
-.slide4 .work .images img {
-  max-width: 50px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
-}
-
 .slide4 .work .images a img {
   max-width: 100px;       /* 이미지 최대 너비 설정 */
   transition: transform 0.3s ease;  /* 부드러운 변환 효과 */
