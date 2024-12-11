@@ -266,28 +266,21 @@ a {
   color: #fff;
 }
 
-.slide3 .work .image {
+.slide4 .type h6 {
+  color: #E9DEFA;
+  border: 2px solid #2285D6;
+}
+
+.slide5 .type h6 {
+  color: #FBFCDB;
+  border: 2px solid #2285D6;
+}
+
+.slide4 .work .image,
+.slide5 .work .image{
   display: flex;
   justify-content: center;
 }
-
-.slide4 .type h6 {
-  color: #2285D6;
-  border: 2px solid #2285D6;
-}
-.slide4 .work .info h4 {
-  color: #2285D6;
-}
-
-.slide4 .work .info h6 span {
-  color: #2285D6;
-}
-
-.slide4 .work .info a {
-  background: #2285D6;
-  color: #fff;
-}
-
 
 
 /* slider arrow */
