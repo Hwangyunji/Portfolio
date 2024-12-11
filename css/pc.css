@@ -266,6 +266,11 @@ a {
   color: #fff;
 }
 
+.slide3 .work .image {
+  display: flex;
+  justify-content: center;
+}
+
 .slide4 .type h6 {
   color: #2285D6;
   border: 2px solid #2285D6;
