@@ -279,8 +279,8 @@ a {
 .slide4 .work .image,
 .slide5 .work .image{
   display: flex;          /* Flexbox 레이아웃 적용 */
-  flex-wrap: wrap;        /* 필요 시 줄바꿈 허용 */
   justify-content: center; /* 이미지들을 가운데 정렬 */
+  align-items: center;
   gap: 20px;              /* 이미지 간격 설정 (원하는 값으로 조정 가능) */
 }
 
