@@ -206,7 +206,7 @@ a {
   margin: 10px;
 }
 
-#section3 .slide img {
+#section3 .slide .pc {
   height: 400px;
 }
 
@@ -267,7 +267,7 @@ a {
 }
 
 .slide4 .type h6 {
-  color: #000000;
+  color: #ffffff;
   border: 2px solid #E9DEFA;
 }
 
