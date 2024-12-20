@@ -206,9 +206,7 @@ a {
   margin: 10px;
 }
 
-#section3 .slide1 img,
-#section3 .slide2 img,
-#section3 .slide3 img{
+#section3 .slide img {
   height: 400px;
 }
 
