@@ -278,7 +278,33 @@ a {
   border: 2px solid #FBFCDB;
 }
 
+.slide4 .work .image,
+.slide5 .work .image{
+  display: flex;          /* Flexbox 레이아웃 적용 */
+  justify-content: center; /* 이미지들을 가운데 정렬 */
+  align-items: center;
+  gap: 20px;              /* 이미지 간격 설정 (원하는 값으로 조정 가능) */
+}
 
+.slide4 .work .images a {
+  display: inline-block;
+}
+
+.images img {
+  width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  height: auto;           /* 비율에 맞게 높이 자동 조정 */
+}
+
+
+
+.slide4 .work .images a img {
+  max-width: 100px;       /* 이미지 최대 너비 설정 */
+  transition: transform 0.3s ease;  /* 부드러운 변환 효과 */
+}
+
+.slide4 .work .images a img:hover {
+  transform: scale(1.1);  /* 마우스 오버 시 이미지 1.1배 확대 */
+}
 
 
 /* slider arrow */
