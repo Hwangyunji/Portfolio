@@ -279,7 +279,7 @@ a {
 .slide4 .work .image,
 .slide5 .work .image{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
