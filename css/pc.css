@@ -278,7 +278,9 @@ a {
 
 .slide4 .work .image,
 .slide5 .work .image{
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide4 .work .images a {
