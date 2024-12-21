@@ -272,8 +272,8 @@ a {
 }
 
 .slide5 .type h6 {
-  color: #FBFCDB;
-  border: 2px solid #FBFCDB;
+  color: #FFCD48;
+  border: 2px solid #FFCD48;
 }
 
 .slide4 .work .images,
@@ -285,14 +285,10 @@ a {
   gap: 20px;
 }
 
-
-
 .images img {
   width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
   height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
-
-
 
 .slide4 .work .images a img {
   max-width: 230px;       /* 이미지 최대 너비 설정 */
