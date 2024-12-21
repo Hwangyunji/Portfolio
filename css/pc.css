@@ -282,6 +282,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
 
@@ -299,7 +300,7 @@ a {
 }
 
 .slide4 .work .images a img:hover {
-  transform: scale(1.1);  /* 마우스 오버 시 이미지 1.1배 확대 */
+  transform: scale(1.01);  /* 마우스 오버 시 이미지 1.1배 확대 */
 }
 
 
