@@ -267,7 +267,7 @@ a {
 }
 
 .slide4 .type h6 {
-  color: #E9DEFA;
+  color: #fff;
   border: 2px solid #E9DEFA;
 }
 
@@ -283,9 +283,7 @@ a {
   align-items: center;
 }
 
-.slide4 .work .images a {
-  display: inline-block;
-}
+
 
 .images img {
   width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
