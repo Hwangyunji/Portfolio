@@ -168,7 +168,7 @@ a {
 #section3 .slide .work {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .slide h6 {
