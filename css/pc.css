@@ -267,7 +267,7 @@ a {
 }
 
 .slide4 .type h6 {
-  color: #EEEEEE;
+  color: #E9DEFA;
   border: 2px solid #E9DEFA;
 }
 
@@ -279,6 +279,7 @@ a {
 .slide4 .work .images,
 .slide5 .work .images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
