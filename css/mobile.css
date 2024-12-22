@@ -277,21 +277,26 @@ a {
 }
 
 .slide4 .type h6 {
-    color: #2285D6;
-    border: 2px solid #2285D6;
+  color: #5AC039;
+  border: 2px solid #5AC039;
 }
 
-.slide4 .work .info h4 {
-    color: #2285D6;
+.slide4 .work .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
-.slide4 .work .info h6 span {
-    color: #2285D6;
+.images img {
+  max-width: 100px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
 
-.slide4 .work .info a {
-    background: #2285D6;
-    color: #fff;
+.slide5 .type h6 {
+  color: #FFCD48;
+  border: 2px solid #FFCD48;
 }
 
 
