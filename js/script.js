@@ -58,7 +58,7 @@ $(document).ready(function () {
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
-          }, 2000);
+          }, 1000);
         }
       }
     } else {
@@ -83,7 +83,7 @@ $(document).ready(function () {
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
-          }, 1000);
+          }, 500);
         }
       } else {
         typingIdx = 0;
