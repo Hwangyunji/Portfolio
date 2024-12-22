@@ -271,11 +271,6 @@ a {
   border: 2px solid #5AC039;
 }
 
-.slide5 .type h6 {
-  color: #FFCD48;
-  border: 2px solid #FFCD48;
-}
-
 .slide4 .work .images {
   display: flex;
   flex-wrap: wrap;
@@ -298,6 +293,16 @@ a {
   transform: scale(1.05);  /* 마우스 오버 시 이미지 1.05배 확대 */
 }
 
+.slide5 .type h6 {
+  color: red;
+  border: 2px solid #FFCD48;
+}
+
+.slide5 .work img {
+  display: flex;
+  justify-content: center;
+  align: center;
+}
 
 /* slider arrow */
 .fp-controlArrow.fp-prev {
