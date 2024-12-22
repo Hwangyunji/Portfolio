@@ -294,14 +294,14 @@ a {
 }
 
 .slide5 .type h6 {
-  color: red;
+  color: #FFCD48;
   border: 2px solid #FFCD48;
 }
 
-.slide5 .work img {
+.slide5 .work {
   display: flex;
   justify-content: center;
-  align: center;
+  align-items: center;
 }
 
 /* slider arrow */
