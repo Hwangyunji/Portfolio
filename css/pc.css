@@ -294,14 +294,17 @@ a {
 }
 
 .slide5 .type h6 {
-  color: #FFCD48;
+  color: red;
   border: 2px solid #FFCD48;
 }
 
 .slide5 .work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+.slide5 .work img {
+  display: inline-block; /* 인라인 요소로 처리 */
+  max-width: 100%;
 }
 
 /* slider arrow */
