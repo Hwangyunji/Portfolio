@@ -267,7 +267,7 @@ a {
 }
 
 .slide4 .type h6 {
-  color: red;
+  color: #5AC039;
   border: 2px solid #5AC039;
 }
 
@@ -276,8 +276,7 @@ a {
   border: 2px solid #FFCD48;
 }
 
-.slide4 .work .images,
-.slide5 .work .images {
+.slide4 .work .images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -296,7 +295,7 @@ a {
 }
 
 .slide4 .work .images a img:hover {
-  transform: scale(1.01);  /* 마우스 오버 시 이미지 1.1배 확대 */
+  transform: scale(1.05);  /* 마우스 오버 시 이미지 1.05배 확대 */
 }
 
 
