@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  let isInitialLoad = true;
+  let hintVisible = false;
 
   $('#fullpage').fullpage({
     anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
@@ -7,36 +7,39 @@ $(document).ready(function () {
     navigation: true,
     navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
     navigationPosition: 'right',
+    controlArrows: true,
+    slidesNavigation: true,
 
     afterLoad: function (origin, destination, direction) {
-      // 최초 로딩 시엔 아무것도 하지 않음
-      if (isInitialLoad) {
-        isInitialLoad = false;
-        return;
+      if (destination.anchor === 'WORK' && window.innerWidth <= 767) {
+        const hint = document.querySelector('.slide-hint-overlay');
+        if (hint && !hintVisible) {
+          hint.style.display = 'flex';
+          hintVisible = true;
+        }
       }
+    },
 
-      if (destination.anchor === 'WORK') {
-        if (window.innerWidth <= 767) {
-          const hint = document.querySelector('.slide-hint-overlay');
-          if (hint) {
-            hint.style.display = 'flex';
-            hint.style.opacity = '1';
-
-            setTimeout(() => {
-              hint.style.opacity = '0';
-              setTimeout(() => {
-                hint.style.display = 'none';
-              }, 1000);
-            }, 2000);
-          }
+    onSlideLeave: function (section, origin, destination, direction) {
+      if (section.anchor === 'WORK' && window.innerWidth <= 767) {
+        const hint = document.querySelector('.slide-hint-overlay');
+        if (hint) {
+          hint.style.display = 'none';
         }
       }
     }
   });
 
+  // 터치 시 힌트 제거 (보조용)
+  document.addEventListener('touchstart', function () {
+    const hint = document.querySelector('.slide-hint-overlay');
+    if (hint && hint.style.display === 'flex') {
+      hint.style.display = 'none';
+    }
+  }, { passive: true });
 
 
-  // 타이핑 코드
+  // 타이핑 애니메이션
   var typingBool = false;
   var typingBool1 = false;
   var typingIdx = 0;
@@ -58,15 +61,15 @@ $(document).ready(function () {
 
   function typing() {
     if (typingIdx < typingTxt.length) {
-      $(".typing>ul>li").removeClass("on")
-      $(".typing ul li").eq(liIndex).addClass("on")
+      $(".typing>ul>li").removeClass("on");
+      $(".typing ul li").eq(liIndex).addClass("on");
       $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
       typingIdx++;
       if (typingIdx == typingTxt.length) {
         if (liIndex == 2) {
           clearInterval(tyInt);
           setTimeout(function () {
-            $(".typing>ul>li").removeClass("on")
+            $(".typing>ul>li").removeClass("on");
           }, 500);
         } else {
           clearInterval(tyInt);
@@ -78,7 +81,7 @@ $(document).ready(function () {
     } else {
       if (liIndex == 1 && typingBool1 == false) {
         if (-typingTxt.length - 1 < del) {
-          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del))
+          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del));
           del--;
         } else {
           typingIdx = 0;
