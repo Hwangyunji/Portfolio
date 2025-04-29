@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  let hintShown = false;
-
   $('#fullpage').fullpage({
     anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
     menu: '#enu',
@@ -9,25 +7,23 @@ $(document).ready(function () {
     navigationPosition: 'right',
 
     afterLoad: function (origin, destination, direction) {
-      // 섹션 3(WORK) 진입 시
       if (destination.anchor === 'WORK') {
-        // 모바일에서만 + 한 번만
-        if (window.innerWidth <= 767 && !hintShown) {
-          hintShown = true;
-          const hint = document.querySelector('.slide-hint-overlay');
-          if (hint) {
-            hint.style.display = 'flex';
-            setTimeout(() => {
+        if (window.innerWidth <= 767) {
+          // 약간의 지연 후 실행 (DOM 이슈 방지)
+          setTimeout(() => {
+            const hint = document.querySelector('#section3 .slide-hint-overlay');
+            if (hint) {
+              hint.style.display = 'flex';
               hint.style.opacity = '1';
-              // 2초 뒤 사라지기
+
               setTimeout(() => {
                 hint.style.opacity = '0';
                 setTimeout(() => {
                   hint.style.display = 'none';
-                }, 1000); // fade-out 시간
+                }, 1000);
               }, 2000);
-            }, 100); // opacity 적용 타이밍
-          }
+            }
+          }, 100); // 약간의 지연 시간
         }
       }
     }
