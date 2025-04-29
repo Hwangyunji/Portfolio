@@ -301,6 +301,11 @@ a {
   transform: scale(1.05);  /* 마우스 오버 시 이미지 1.05배 확대 */
 }
 
+.slide4 p {
+  text-align: center
+  margin-top:20px
+}
+
 .slide5 .type h6 {
   color: #FFCD48;
   border: 2px solid #FFCD48;
