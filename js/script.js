@@ -1,33 +1,35 @@
-$('#fullpage').fullpage({
-  anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-  menu: '#enu',
-  navigation: true,
-  navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-  navigationPosition: 'right',
+$(document).ready(function () {
+  $('#fullpage').fullpage({
+    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    menu: '#enu',
+    navigation: true,
+    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    navigationPosition: 'right',
 
-  afterLoad: function (origin, destination, direction) {
-    if (destination.anchor === 'WORK') {
-      // 모바일일 경우만 실행
-      if (window.innerWidth <= 767) {
-        const hint = document.querySelector('.slide-hint-overlay');
-        if (hint) {
-          hint.style.display = 'flex';
-          hint.style.opacity = '1';
+    afterLoad: function (origin, destination, direction) {
+      if (destination.anchor === 'WORK') {
+        // 모바일일 경우만 실행
+        if (window.innerWidth <= 767) {
+          const hint = document.querySelector('.slide-hint-overlay');
+          if (hint) {
+            hint.style.display = 'flex';
+            hint.style.opacity = '1';
 
-          // 자동으로 사라지게 처리 (애니메이션 or timeout)
-          setTimeout(() => {
-            hint.style.opacity = '0';
+            // 자동으로 사라지게 처리 (애니메이션 or timeout)
             setTimeout(() => {
-              hint.style.display = 'none';
-            }, 1000); // fade out 시간
-          }, 2000); // 몇 초간 표시할지
+              hint.style.opacity = '0';
+              setTimeout(() => {
+                hint.style.display = 'none';
+              }, 1000);
+            }, 2000);
+          }
         }
       }
     }
-  }
-});
+  });
 
-  // 타이핑 효과
+
+  // 타이핑 코드
   var typingBool = false;
   var typingBool1 = false;
   var typingIdx = 0;
@@ -49,15 +51,15 @@ $('#fullpage').fullpage({
 
   function typing() {
     if (typingIdx < typingTxt.length) {
-      $(".typing>ul>li").removeClass("on");
-      $(".typing ul li").eq(liIndex).addClass("on");
+      $(".typing>ul>li").removeClass("on")
+      $(".typing ul li").eq(liIndex).addClass("on")
       $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
       typingIdx++;
       if (typingIdx == typingTxt.length) {
         if (liIndex == 2) {
           clearInterval(tyInt);
           setTimeout(function () {
-            $(".typing>ul>li").removeClass("on");
+            $(".typing>ul>li").removeClass("on")
           }, 500);
         } else {
           clearInterval(tyInt);
@@ -69,7 +71,7 @@ $('#fullpage').fullpage({
     } else {
       if (liIndex == 1 && typingBool1 == false) {
         if (-typingTxt.length - 1 < del) {
-          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del));
+          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del))
           del--;
         } else {
           typingIdx = 0;
