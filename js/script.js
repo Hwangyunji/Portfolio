@@ -1,39 +1,40 @@
-$('#fullpage').fullpage({
-  anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-  menu: '#enu',
-  navigation: true,
-  navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-  navigationPosition: 'right',
+$(document).ready(function () {
+  // ✅ fullpage 초기화
+  $('#fullpage').fullpage({
+    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    menu: '#enu',
+    navigation: true,
+    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    navigationPosition: 'right',
 
-  afterLoad: function (origin, destination, direction) {
-    if (destination.anchor === 'WORK') {
-      // 모바일일 경우만 실행
-      if (window.innerWidth <= 767) {
-        const hint = document.querySelector('.slide-hint-overlay');
-        if (hint) {
-          hint.style.display = 'flex';
-          hint.style.opacity = '1';
+    afterLoad: function (origin, destination, direction) {
+      if (destination.anchor === 'WORK') {
+        // 모바일일 경우만 실행
+        if (window.innerWidth <= 767) {
+          const hint = document.querySelector('.slide-hint-overlay');
+          if (hint) {
+            hint.style.display = 'flex';
+            hint.style.opacity = '1';
 
-          // 자동으로 사라지게 처리 (애니메이션 or timeout)
-          setTimeout(() => {
-            hint.style.opacity = '0';
+            // 자동으로 사라지게 처리 (애니메이션 or timeout)
             setTimeout(() => {
-              hint.style.display = 'none';
-            }, 1000); // fade out 시간
-          }, 2000); // 몇 초간 표시할지
+              hint.style.opacity = '0';
+              setTimeout(() => {
+                hint.style.display = 'none';
+              }, 1000);
+            }, 2000);
+          }
         }
       }
     }
-  }
-
-
-
-  // 메인에서 상단이동
-  $('#btnGoTop').click(function () {
-    $.fn.fullpage.moveTo(1, 1); // 이동하고싶은 페이지
   });
 
+  // ✅ 메인에서 상단이동
+  $('#btnGoTop').click(function () {
+    $.fn.fullpage.moveTo(1, 1);
+  });
 
+  // ✅ 타이핑 관련 코드 시작
   var typingBool = false;
   var typingBool1 = false;
   var typingIdx = 0;
@@ -45,24 +46,19 @@ $('#fullpage').fullpage({
   var repeatInt = null;
   var tyInt = null;
 
-  // 타이핑될 텍스트를 가져온다 
   var typingTxt = $(".typing-txt1>ul>li").eq(liIndex).text();
-  typingTxt = typingTxt.split(""); // 한글자씩 자른다. 
+  typingTxt = typingTxt.split("");
 
   if (typingBool == false) {
-    // 타이핑이 진행되지 않았다면 
     typingBool = true;
-    tyInt = setInterval(typing, 200); // 첫번재 반복동작 
+    tyInt = setInterval(typing, 200);
   }
 
   function typing() {
     if (typingIdx < typingTxt.length) {
-
-      // 타이핑될 텍스트 길이만큼 반복 
       $(".typing>ul>li").removeClass("on")
       $(".typing ul li").eq(liIndex).addClass("on")
       $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
-      // 한글자씩 이어준다. 
       typingIdx++;
       if (typingIdx == typingTxt.length) {
         if (liIndex == 2) {
@@ -71,8 +67,6 @@ $('#fullpage').fullpage({
             $(".typing>ul>li").removeClass("on")
           }, 500);
         } else {
-          //첫번째 단어가 써지면 2초 쉰다.
-
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
@@ -80,15 +74,11 @@ $('#fullpage').fullpage({
         }
       }
     } else {
-      //한문장이끝나면
       if (liIndex == 1 && typingBool1 == false) {
         if (-typingTxt.length - 1 < del) {
-          //한글자씩 지운다.
           $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del))
           del--;
         } else {
-
-          //변수초기화 
           typingIdx = 0;
           del = -1;
           typingTxt = $(".typing-txt2>ul>li").eq(liIndex2).text();
@@ -96,8 +86,6 @@ $('#fullpage').fullpage({
           if (liIndex2 == liLength2) {
             typingBool1 = true;
           }
-
-          //1초후 다음문장 타이핑 
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
@@ -109,10 +97,7 @@ $('#fullpage').fullpage({
           liIndex++;
         }
         typingTxt = $(".typing-txt1>ul>li").eq(liIndex).text();
-
       }
     }
   }
-
-
 });
