@@ -176,12 +176,6 @@ a {
   z-index: 999;
 }
 
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; display: none; }
-}
-
 .slide .type {
     display: flex;
     justify-content: center;
