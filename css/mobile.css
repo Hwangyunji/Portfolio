@@ -173,11 +173,11 @@ a {
 }
 
 @keyframes flashOverlay {
-  0%, 100% {
-    background: rgba(0, 0, 0, 0.6); 
+  10%, 90% {
+    background: rgba(255, 255, 255, 0.8); 
   }
-  80% {
-    background: rgba(255, 255, 255, 0.8); /* 밝은 흰색 */
+  50% {
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
