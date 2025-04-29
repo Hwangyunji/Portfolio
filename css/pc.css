@@ -298,7 +298,7 @@ a {
 }
 
 .slide4 .images img {
-  width: 200px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
   height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
 
@@ -321,6 +321,11 @@ a {
 .slide5 .type h6 {
   color: #FFCD48;
   border: 2px solid #FFCD48;
+}
+
+.slide5 .work {
+  display: flex;
+  justify-content: center;
 }
 
 .slide5 .work img {
