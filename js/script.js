@@ -1,33 +1,31 @@
-$(document).ready(function () {
-  $('#fullpage').fullpage({
-    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    menu: '#enu',
-    navigation: true,
-    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    navigationPosition: 'right',
+$('#fullpage').fullpage({
+  anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+  menu: '#enu',
+  navigation: true,
+  navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+  navigationPosition: 'right',
 
-    afterLoad: function (origin, destination, direction) {
-      if (destination.anchor === 'WORK') {
-        if (window.innerWidth <= 767) {
-          // 약간의 지연 후 실행 (DOM 이슈 방지)
+  afterLoad: function (origin, destination, direction) {
+    if (destination.anchor === 'WORK') {
+      // 모바일일 경우만 실행
+      if (window.innerWidth <= 767) {
+        const hint = document.querySelector('.slide-hint-overlay');
+        if (hint) {
+          hint.style.display = 'flex';
+          hint.style.opacity = '1';
+
+          // 자동으로 사라지게 처리 (애니메이션 or timeout)
           setTimeout(() => {
-            const hint = document.querySelector('#section3 .slide-hint-overlay');
-            if (hint) {
-              hint.style.display = 'flex';
-              hint.style.opacity = '1';
-
-              setTimeout(() => {
-                hint.style.opacity = '0';
-                setTimeout(() => {
-                  hint.style.display = 'none';
-                }, 1000);
-              }, 2000);
-            }
-          }, 100); // 약간의 지연 시간
+            hint.style.opacity = '0';
+            setTimeout(() => {
+              hint.style.display = 'none';
+            }, 1000); // fade out 시간
+          }, 2000); // 몇 초간 표시할지
         }
       }
     }
-  });
+  }
+});
 
   // 타이핑 효과
   var typingBool = false;
