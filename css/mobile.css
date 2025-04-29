@@ -306,8 +306,9 @@ a {
   border: 2px solid #5AC039;
 }
 
-.slide4, .slide5 .work {
-    margin-top: 50px
+.slide4 .work, 
+.slide5 .work {
+    margin-top: 30px
 }
 
 .slide4 .work {
@@ -320,6 +321,7 @@ a {
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  margin-bottom: 30px;  
 }
 
 .slide4 .images img {
@@ -333,7 +335,7 @@ a {
 }
 
 .slide5 img {
-    height: 500px;
+    height: 450px;
     width: auto;
 }
 
