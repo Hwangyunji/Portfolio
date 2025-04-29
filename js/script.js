@@ -1,23 +1,31 @@
 $(document).ready(function () {
-  $('#fullpage').fullpage({
-    //options here
-    // responsiveWidth: 1000, // fullpage 해제 분기점
-    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    menu: '#enu',
-    navigation: true,
-    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    navigationPosition: 'right',
-  });
+  function isMobile() {
+    return window.innerWidth <= 767;
+  }
 
-  if (window.innerWidth <= 767) {
-  fullpage_api.setAllowScrolling(true, 'up, down');
-  fullpage_api.destroySection('section3'); // 또는 커스텀 처리
-}
+  // 모바일일 때 fullpage.js 비활성화 후 수동 스크롤
+  if (isMobile()) {
+    // fullpage.js 초기화 방지
+    $('#fullpage').removeAttr('id');
+    $('body').addClass('mobile');
+  } else {
+    // PC일 때 fullpage.js 적용
+    $('#fullpage').fullpage({
+      anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+      menu: '#enu',
+      navigation: true,
+      navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+      navigationPosition: 'right',
+    });
+  }
 
-
-  // 메인에서 상단이동
+  // 상단 이동 버튼
   $('#btnGoTop').click(function () {
-    $.fn.fullpage.moveTo(1, 1); // 이동하고싶은 페이지
+    if (!isMobile()) {
+      $.fn.fullpage.moveTo(1, 1);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   });
 
 
