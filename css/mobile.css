@@ -310,6 +310,10 @@ a {
     margin-top: 50px
 }
 
+.slide4 .work {
+    flex-direction: column;
+}
+
 .slide4 .work .images {
   display: flex;
   flex-wrap: wrap;
