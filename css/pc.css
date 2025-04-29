@@ -163,7 +163,9 @@ a {
   display: none !important;
 }
 
-.slide .type {
+.slide1 .type,
+.slide2 .type,
+.slide3 .type {
   display: flex;
   justify-content: center;
   font-size: 20px;
@@ -270,6 +272,14 @@ a {
   color: #fff;
 }
 
+.slide4 .type,
+.slide5 .type {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
 .slide4 .type h6 {
   color: #5AC039;
   border: 2px solid #5AC039;
@@ -301,9 +311,9 @@ a {
   transform: scale(1.05);  /* 마우스 오버 시 이미지 1.05배 확대 */
 }
 
-.slide4 p {
-  text-align: center
-  margin-top:20px
+.slide4 .work h6 {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .slide5 .type h6 {
