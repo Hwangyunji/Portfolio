@@ -155,7 +155,7 @@ a {
 
 
 #section3 {
-    background: #000;
+    background: #fff;
 }
 
 .slide-hint-overlay {
@@ -166,19 +166,11 @@ a {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   color: white;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   z-index: 9999;
-  opacity: 0;
-  animation: fadeOut 3s forwards;
-}
-
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; display: none; }
 }
 
 .slide .type {
