@@ -169,14 +169,14 @@ a {
   border-radius: 10px;
   font-size: 14px;
   z-index: 10;
-  animation: flashOverlay 5s infinite;
+  animation: flashOverlay 3s infinite;
 }
 
 @keyframes flashOverlay {
   0%, 100% {
     background: rgba(0, 0, 0, 0.6); 
   }
-  50% {
+  80% {
     background: rgba(255, 255, 255, 0.8); /* 밝은 흰색 */
   }
 }
