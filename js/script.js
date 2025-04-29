@@ -1,31 +1,18 @@
 $(document).ready(function () {
-  function isMobile() {
-    return window.innerWidth <= 767;
-  }
+  $('#fullpage').fullpage({
+    //options here
+    // responsiveWidth: 1000, // fullpage 해제 분기점
+    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    menu: '#enu',
+    navigation: true,
+    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+    navigationPosition: 'right',
+  });
 
-  // 모바일일 때 fullpage.js 비활성화 후 수동 스크롤
-  if (isMobile()) {
-    // fullpage.js 초기화 방지
-    $('#fullpage').removeAttr('id');
-    $('body').addClass('mobile');
-  } else {
-    // PC일 때 fullpage.js 적용
-    $('#fullpage').fullpage({
-      anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-      menu: '#enu',
-      navigation: true,
-      navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-      navigationPosition: 'right',
-    });
-  }
 
-  // 상단 이동 버튼
+  // 메인에서 상단이동
   $('#btnGoTop').click(function () {
-    if (!isMobile()) {
-      $.fn.fullpage.moveTo(1, 1);
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    $.fn.fullpage.moveTo(1, 1); // 이동하고싶은 페이지
   });
 
 
@@ -71,7 +58,7 @@ $(document).ready(function () {
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
-          }, 1000);
+          }, 500);
         }
       }
     } else {
@@ -96,7 +83,7 @@ $(document).ready(function () {
           clearInterval(tyInt);
           setTimeout(function () {
             tyInt = setInterval(typing, 200);
-          }, 500);
+          }, 250);
         }
       } else {
         typingIdx = 0;
