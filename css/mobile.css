@@ -174,7 +174,7 @@ a {
 
 @keyframes flashOverlay {
   0%, 100% {
-    background: rgba(200, 200, 200, 0.3); /* 투명한 회색 */
+    background: rgba(0, 0, 0, 0.6); 
   }
   50% {
     background: rgba(255, 255, 255, 0.8); /* 밝은 흰색 */
