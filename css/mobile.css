@@ -5,11 +5,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-body {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-
 ul {
     list-style-type: none;
 }
@@ -57,11 +52,6 @@ a {
     padding: 0 50px;
 }
 
-#section1, #section2, #section4 {
-    height: 100vh;
-    scroll-snap-align: start;
-  }
-
 #section1 {
     text-align: center;
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
@@ -71,12 +61,6 @@ a {
 #section2 {
     background: #e9defa;
 }
-
-#section3 {
-    height: auto;
-    min-height: 100vh; /* 내용이 적으면 꽉 차도록 */
-    scroll-snap-align: none;
-  }
 
 #section4 {
     background: #fbfcdb;
