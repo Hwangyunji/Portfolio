@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  let hintShown = false; // 힌트 1회만 표시하도록
+  let hintShown = false;
 
   $('#fullpage').fullpage({
     anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
@@ -9,30 +9,28 @@ $(document).ready(function () {
     navigationPosition: 'right',
 
     afterLoad: function (origin, destination, direction) {
+      // 섹션 3(WORK) 진입 시
       if (destination.anchor === 'WORK') {
-        // 모바일만 && 아직 힌트를 안 보여줬을 때만 실행
+        // 모바일에서만 + 한 번만
         if (window.innerWidth <= 767 && !hintShown) {
+          hintShown = true;
           const hint = document.querySelector('.slide-hint-overlay');
           if (hint) {
-            hintShown = true; // 다시 안 뜨게 설정
             hint.style.display = 'flex';
-            hint.style.opacity = '1';
-
             setTimeout(() => {
-              hint.style.opacity = '0';
+              hint.style.opacity = '1';
+              // 2초 뒤 사라지기
               setTimeout(() => {
-                hint.style.display = 'none';
-              }, 1000);
-            }, 2000);
+                hint.style.opacity = '0';
+                setTimeout(() => {
+                  hint.style.display = 'none';
+                }, 1000); // fade-out 시간
+              }, 2000);
+            }, 100); // opacity 적용 타이밍
           }
         }
       }
     }
-  });
-
-  // 상단으로 이동
-  $('#btnGoTop').click(function () {
-    $.fn.fullpage.moveTo(1, 1);
   });
 
   // 타이핑 효과
