@@ -9,6 +9,11 @@ $(document).ready(function () {
     navigationPosition: 'right',
   });
 
+  if (window.innerWidth <= 767) {
+  fullpage_api.setAllowScrolling(true, 'up, down');
+  fullpage_api.destroySection('section3'); // 또는 커스텀 처리
+}
+
 
   // 메인에서 상단이동
   $('#btnGoTop').click(function () {
