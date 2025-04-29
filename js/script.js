@@ -1,13 +1,31 @@
-$(document).ready(function () {
-  $('#fullpage').fullpage({
-    //options here
-    // responsiveWidth: 1000, // fullpage 해제 분기점
-    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    menu: '#enu',
-    navigation: true,
-    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    navigationPosition: 'right',
-  });
+$('#fullpage').fullpage({
+  anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+  menu: '#enu',
+  navigation: true,
+  navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
+  navigationPosition: 'right',
+
+  afterLoad: function (origin, destination, direction) {
+    if (destination.anchor === 'WORK') {
+      // 모바일일 경우만 실행
+      if (window.innerWidth <= 767) {
+        const hint = document.querySelector('.slide-hint-overlay');
+        if (hint) {
+          hint.style.display = 'flex';
+          hint.style.opacity = '1';
+
+          // 자동으로 사라지게 처리 (애니메이션 or timeout)
+          setTimeout(() => {
+            hint.style.opacity = '0';
+            setTimeout(() => {
+              hint.style.display = 'none';
+            }, 1000); // fade out 시간
+          }, 2000); // 몇 초간 표시할지
+        }
+      }
+    }
+  }
+
 
 
   // 메인에서 상단이동
