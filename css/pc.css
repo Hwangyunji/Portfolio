@@ -323,7 +323,7 @@ a {
   border: 2px solid #FFCD48;
 }
 
-.slide5 .work {
+#section3 .slide .slide5 .work {
   display: flex;
   justify-content: center;
 }
