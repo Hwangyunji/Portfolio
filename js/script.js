@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  // ✅ fullpage 초기화
+  let hintShown = false; // 힌트 1회만 표시하도록
+
   $('#fullpage').fullpage({
     anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
     menu: '#enu',
@@ -9,14 +10,14 @@ $(document).ready(function () {
 
     afterLoad: function (origin, destination, direction) {
       if (destination.anchor === 'WORK') {
-        // 모바일일 경우만 실행
-        if (window.innerWidth <= 767) {
+        // 모바일만 && 아직 힌트를 안 보여줬을 때만 실행
+        if (window.innerWidth <= 767 && !hintShown) {
           const hint = document.querySelector('.slide-hint-overlay');
           if (hint) {
+            hintShown = true; // 다시 안 뜨게 설정
             hint.style.display = 'flex';
             hint.style.opacity = '1';
 
-            // 자동으로 사라지게 처리 (애니메이션 or timeout)
             setTimeout(() => {
               hint.style.opacity = '0';
               setTimeout(() => {
@@ -29,12 +30,12 @@ $(document).ready(function () {
     }
   });
 
-  // ✅ 메인에서 상단이동
+  // 상단으로 이동
   $('#btnGoTop').click(function () {
     $.fn.fullpage.moveTo(1, 1);
   });
 
-  // ✅ 타이핑 관련 코드 시작
+  // 타이핑 효과
   var typingBool = false;
   var typingBool1 = false;
   var typingIdx = 0;
@@ -56,15 +57,15 @@ $(document).ready(function () {
 
   function typing() {
     if (typingIdx < typingTxt.length) {
-      $(".typing>ul>li").removeClass("on")
-      $(".typing ul li").eq(liIndex).addClass("on")
+      $(".typing>ul>li").removeClass("on");
+      $(".typing ul li").eq(liIndex).addClass("on");
       $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
       typingIdx++;
       if (typingIdx == typingTxt.length) {
         if (liIndex == 2) {
           clearInterval(tyInt);
           setTimeout(function () {
-            $(".typing>ul>li").removeClass("on")
+            $(".typing>ul>li").removeClass("on");
           }, 500);
         } else {
           clearInterval(tyInt);
@@ -76,7 +77,7 @@ $(document).ready(function () {
     } else {
       if (liIndex == 1 && typingBool1 == false) {
         if (-typingTxt.length - 1 < del) {
-          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del))
+          $(".typing ul li").eq(liIndex).html(typingTxt.slice(0, del));
           del--;
         } else {
           typingIdx = 0;
