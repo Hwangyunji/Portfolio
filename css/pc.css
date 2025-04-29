@@ -303,7 +303,8 @@ a {
 }
 
 .slide5 .work {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .slide5 .work img {
