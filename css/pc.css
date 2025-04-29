@@ -159,6 +159,10 @@ a {
   background: #fff;
 }
 
+.slide-hint-overlay {
+  display: none !important;
+}
+
 .slide .type {
   display: flex;
   justify-content: center;
