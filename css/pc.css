@@ -275,6 +275,10 @@ a {
   border: 2px solid #5AC039;
 }
 
+.slide4 .work {
+    flex-direction: column;
+}
+
 .slide4 .work .images {
   display: flex;
   flex-wrap: wrap;
