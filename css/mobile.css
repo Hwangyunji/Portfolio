@@ -306,6 +306,10 @@ a {
   border: 2px solid #5AC039;
 }
 
+.slide4, .slide5 .work {
+    margin-top: 50px
+}
+
 .slide4 .work .images {
   display: flex;
   flex-wrap: wrap;
@@ -315,7 +319,7 @@ a {
 }
 
 .slide4 .images img {
-  max-width: 100px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  max-width: 150px;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
   height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
 
@@ -325,7 +329,7 @@ a {
 }
 
 .slide5 img {
-    height: 230px;
+    height: 500px;
     width: auto;
 }
 
