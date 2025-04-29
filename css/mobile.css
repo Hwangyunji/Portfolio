@@ -169,7 +169,7 @@ a {
   border-radius: 10px;
   font-size: 14px;
   z-index: 10;
-  animation: flashOverlay 2s infinite;
+  animation: flashOverlay 5s infinite;
 }
 
 @keyframes flashOverlay {
