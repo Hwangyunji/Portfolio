@@ -283,7 +283,7 @@ a {
   gap: 10px;
 }
 
-.images img {
+.slide4 .images img {
   width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
   height: auto;           /* 비율에 맞게 높이 자동 조정 */
 }
@@ -298,7 +298,7 @@ a {
 }
 
 .slide5 .type h6 {
-  color: red;
+  color: #FFCD48;
   border: 2px solid #FFCD48;
 }
 
@@ -307,8 +307,8 @@ a {
 }
 
 .slide5 .work img {
-  display: inline-block; /* 인라인 요소로 처리 */
-  max-width: 100%;
+  width: auto;       /* 이미지 최대 너비 설정 (원하는 값으로 조정 가능) */
+  height: auto;
 }
 
 /* slider arrow */
