@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  let isInitialLoad = true;
+
   $('#fullpage').fullpage({
     anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
     menu: '#enu',
@@ -7,15 +9,19 @@ $(document).ready(function () {
     navigationPosition: 'right',
 
     afterLoad: function (origin, destination, direction) {
+      // 최초 로딩 시엔 아무것도 하지 않음
+      if (isInitialLoad) {
+        isInitialLoad = false;
+        return;
+      }
+
       if (destination.anchor === 'WORK') {
-        // 모바일일 경우만 실행
         if (window.innerWidth <= 767) {
           const hint = document.querySelector('.slide-hint-overlay');
           if (hint) {
             hint.style.display = 'flex';
             hint.style.opacity = '1';
 
-            // 자동으로 사라지게 처리 (애니메이션 or timeout)
             setTimeout(() => {
               hint.style.opacity = '0';
               setTimeout(() => {
@@ -27,6 +33,7 @@ $(document).ready(function () {
       }
     }
   });
+
 
 
   // 타이핑 코드
