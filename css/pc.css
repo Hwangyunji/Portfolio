@@ -172,7 +172,9 @@ a {
   padding-bottom: 50px;
 }
 
-#section3 .slide .work {
+#section3 .slide1 .work,
+#section3 .slide2 .work,
+#section3 .slide3 .work {
   display: flex;
   justify-content: space-between;
   }
@@ -323,7 +325,7 @@ a {
   border: 2px solid #FFCD48;
 }
 
-#section3 .slide .slide5 .work {
+.slide5 .work {
   display: flex;
   justify-content: center;
 }
