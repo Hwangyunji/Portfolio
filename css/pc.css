@@ -312,6 +312,8 @@ a {
 }
 
 .slide4 .work h6 {
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
   margin-top: 20px;
 }
@@ -323,7 +325,7 @@ a {
 
 .slide5 .work {
   display: flex;
-  justify-content: center;
+  align-items: center
 }
 
 .slide5 .work img {
